@@ -1,0 +1,97 @@
+body {
+    background-color: lightskyblue;
+    transition: background-color 3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.sun, .moon {
+    font-size: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.sun {
+    z-index: 1;
+}
+
+.moon {
+    z-index: 1;
+}
+
+.star1, .star2, .star3 {
+    font-size: 60px;
+    position: absolute;
+    opacity: 0;
+}
+.star1, .star2, .star3 {
+    font-size: 60px;
+    position: absolute;
+    opacity: 0;
+}
+
+.star1 { top: 20%; left: 45%; }
+.star2 { top: 25%; left: 60%; }
+.star3 { top: 15%; left: 35%; }
+
+.cloud1, .cloud2, .cloud3, .cloud4, .cloud5 {
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.cloud1 { transform: translate(-200px, -100px); }
+.cloud2 { transform: translate(-100px, -130px); }
+.cloud3 { transform: translate(0px, -90px); }
+.cloud4 { transform: translate(100px, -120px); }
+.cloud5 { transform: translate(200px, -100px); }
+
+.bounce {
+    font-size: 120px; 
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .spin {
+        font-size: 80px;
+        top: 25%;
+    }
+
+    .cloud1, .cloud2, .cloud3, .cloud4, .cloud5 {
+        font-size: 80px;
+    }
+    
+    .bounce {
+        font-size: 100px; 
+        bottom: 5px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .spin {
+        font-size: 60px; 
+        top: 20%;
+    }
+
+    .cloud1, .cloud2, .cloud3, .cloud4, .cloud5 {
+        font-size: 60px; 
+    }
+
+    .bounce {
+        font-size: 80px;
+        bottom: 0;
+        left: 40px;
+    }
+}
